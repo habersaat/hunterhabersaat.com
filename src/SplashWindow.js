@@ -5,9 +5,6 @@
  * DS207: Consider shorter variations of null checks
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
  */
-import jQuery from "jquery";
-window.$ = window.jQuery = jQuery;
-
 class Main {
     constructor(o) {
         if (o == null) {
