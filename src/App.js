@@ -1,11 +1,9 @@
 import "./App.css";
-import "./SplashWindow.coffee";
 import React, { useState } from "react";
 import MojsExample from "./MojsExample";
 import Button from "./Button";
 import Burst from "./Burst";
 import "./styles.css";
-
 export default function App() {
     return (
         <>

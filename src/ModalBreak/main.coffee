@@ -2,6 +2,7 @@ class Main
   constructor:(@o={})->
     @vars()
     @listeners()
+
   vars:->
     @$effect  = $('#js-effect')
     @$close   = $ '#js-close-button'
@@ -28,9 +29,7 @@ class Main
     @loop = @loop.bind(@); @loop()
     @initEffectTweens(); @showModal(true); @showHints(700)
     isOpera = navigator.userAgent.match(/Opera|OPR\//)
-    crack1 = 'http://legomushroom.com/pens-assets/XJjLxe/crack1.wav'
-    crack3 = 'http://legomushroom.com/pens-assets/XJjLxe/crack3.mp3'
-    url = if !isOpera then crack3 else crack1
+    url = if !isOpera then 'sounds/crack3.mp3' else 'sounds/crack1.wav'
     @audio = new Howl urls: [url]
 
   showHints:(delay)->
@@ -143,8 +142,8 @@ class Main
       .onUpdate ->
         p = @p; nP = 1-p
         shake = shakeOffset*nP
-        it.$breakParts.css transform: "translate(#{shake}px, #{shake}px)"
-        it.$effect.css transform: "translate(#{-.75*shake}px, #{-.5*shake}px)"
+        # it.$breakParts.css transform: "translate(#{shake}px, #{shake}px)"
+        # it.$effect.css transform: "translate(#{-.75*shake}px, #{-.5*shake}px)"
       .easing TWEEN.Easing.Elastic.Out
 
     @shiftT = new TWEEN.Tween(p:0).to(p:1, 1350*@s)
@@ -206,3 +205,5 @@ class Main
   rand:(min,max)-> Math.floor((Math.random() * ((max + 1) - min)) + min)
 
 new Main
+
+
