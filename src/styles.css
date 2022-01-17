@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+/* Prevent clipping on SVG viewbox */
+svg {
+    overflow: visible;
+}
+
+/* Basic style of the animation container */
+.MojsExample {
+    position: relative;
+    background: #29363b;
+    overflow: hidden;
+    min-height: 16em;
+    padding: 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.SplashPage {
+    position: relative;
+    background: #ea485c;
+    overflow: hidden;
+    min-height: 100vh;
+    padding: 2em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 6rem;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.MojsExample .content {
+    position: relative;
+    z-index: 2;
+}
+
+footer {
+    padding: 1em;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.BurstExample {
+    z-index: 100;
+}
+
+/* Button component */
+.button {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0.6em 1.4em;
+    margin: 0.9em;
+    font-size: 1em;
+    min-width: 10em;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+    transition: box-shadow 0.2s ease-out;
+    overflow: visible;
+}
+.button:focus {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: #232b2b;
+    color: #f1e2d7;
+    font-family: Century Gothic, AppleGothic, CenturyGothic, apple-system,
+        BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+        Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    text-align: center;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    height: 100%;
+}
