@@ -3,12 +3,13 @@ import React, { useState } from "react";
 import Button from "./Button";
 import Burst from "./Burst";
 import "./styles.css";
+import BrokenModal from "./BrokenModal";
 
 export default function App() {
     return (
         <>
-            <burst></burst>
-
+            <BrokenModal />
+            <burst />
             <div className="SplashPage">Hunter Habersaat</div>
             <footer>
                 <p>Connect with me:</p>
