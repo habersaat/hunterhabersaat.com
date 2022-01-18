@@ -4,4 +4,10 @@ import App from "./App";
 import BrokenModal from "./BrokenModal";
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<React.StrictMode></React.StrictMode>, rootElement);
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+        <BrokenModal />
+    </React.StrictMode>,
+    rootElement
+);

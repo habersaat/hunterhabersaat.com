@@ -1,8 +1,8 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import "./styles.css";
+import Script1 from "./Script1";
 
-export default function App() {
+export default function BrokenModal() {
     return (
         <>
             <div>
@@ -323,6 +323,7 @@ export default function App() {
                     </div>
                 </div>
             </div>
+            <Script1 />
         </>
     );
 }
