@@ -26,13 +26,19 @@ export default function BrokenModal() {
                     </g>
                 </svg>
                 <div className="look">Look Ma! I broke that HTML!</div>
-                <a href="http://twitter.com/legomushroom" className="by" />
                 <div id="js-show-modal" className="launch-button">
                     show modal
                     <div className="launch-button__glare" />
                 </div>
-                <div id="js-modal-overlay" className="modal-overlay" />
-                <div id="js-modal-holder" className="modal-holder">
+                <div
+                    id="js-modal-overlay"
+                    className="modal-overlay"
+                    style={{ opacity: "1", display: "block" }}
+                />
+                <div
+                    id="js-modal-holder"
+                    className="modal-holder"
+                    style={{ display: "block" }}>
                     <div id="js-hint1" className="hint hint--1">
                         play with the form
                         <br />
@@ -211,7 +217,15 @@ export default function BrokenModal() {
                             </svg>
                         </div>
                     </div>
-                    <form1 action id="js-modal" className="modal">
+                    <form1
+                        action
+                        id="js-modal"
+                        className="modal"
+                        style={{
+                            display: "block",
+                            opacity: "1",
+                            transform: "translateY(0px)",
+                        }}>
                         <div id="js-close-button" className="modal__close">
                             <div id title className="icon">
                                 <svg viewBox="0 0 32 32">
