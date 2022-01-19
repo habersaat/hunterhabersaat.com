@@ -8,7 +8,6 @@ import BrokenModal from "./BrokenModal";
 export default function App() {
     return (
         <>
-            <burst />
             <div className="SplashPage">Hunter Habersaat</div>
             <footer>
                 <p className="ConnectText">Connect with me:</p>

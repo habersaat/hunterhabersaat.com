@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <link rel="shortcut icon" href="%PUBLIC_URL%/100emoji.ico" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -53,8 +57,7 @@
         <div id="js-modal-overlay" class="modal-overlay"></div>
         <div id="js-modal-holder" class="modal-holder">
             <div id="js-hint1" class="hint hint--1">
-                play with the form<br />
-                to be sure it is just<br />a plain HTML
+                read this before proceeding<br />
             </div>
             <div id="js-hint2" class="hint hint--2">
                 then hit<br />
@@ -236,41 +239,38 @@
                 </div>
                 <div class="modal__header">Under Construction &#128034;</div>
                 <div class="modal__description">
-                    this is dumb modal window, click × to close it
+                    Hi 👋 Welcome to my personal website. This page is still
+                    under construction, and thus many parts are broken or do not
+                    work <br /><br />
+                    If you're looking for a more updated and less broken
+                    profile, feel free to visit my Linkedin and Github below
                 </div>
-                <div class="modal__section">
-                    <div class="input-with-label">
-                        <input
-                            id="name"
-                            type="text"
-                            class="input-with-label__input"
-                        />
-                        <label for="name" class="input-with-label__label"
-                            >username or email
-                            <div class="input-with-label__label__corner"></div>
-                        </label>
-                    </div>
-                </div>
-                <div class="modal__section">
-                    <div class="input-with-label">
-                        <input
-                            id="password"
-                            type="password"
-                            class="input-with-label__input"
-                        />
-                        <label for="password" class="input-with-label__label"
-                            >password
-                            <div class="input-with-label__label__corner"></div>
-                        </label>
-                    </div>
-                </div>
+                <div class="modal__section"></div>
+
                 <div class="modal__section grid grid--sliced grid--gutter-x2">
                     <div class="grid-bit grid-bit--14-20">
-                        <button type="submit">log in</button>
+                        <button class="linkedin-button" onclick="linkedin()">
+                            Linkedin
+                        </button>
                     </div>
+                    <script>
+                        function linkedin() {
+                            window.location.href =
+                                "https://www.linkedin.com/in/habersaat/";
+                        }
+                    </script>
                     <div class="grid-bit grid-bit--6-20">
-                        <button class="button--grey">cancel</button>
+                        <button class="github-button" onclick="github()">
+                            Github
+                            <i class="fa fa-github" style="font-size: 18px"></i>
+                        </button>
                     </div>
+                    <script>
+                        function github() {
+                            window.location.href =
+                                "https://github.com/habersaat";
+                        }
+                    </script>
                 </div>
             </form1>
             <svg style="display: none">
@@ -347,6 +347,12 @@
             <script src=".//js/tween.js"></script>
             <script src="./js/html2canvas.js"></script>
             <script src="./dist/main.js"></script>
+            <script
+                src="https://platform.linkedin.com/badges/js/profile.js"
+                async
+                defer
+                type="text/javascript"
+            ></script>
         </div>
     </body>
 </html>
