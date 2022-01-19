@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import Button from "./Button";
+import BottomButton from "./BottomButton";
 import Burst from "./Burst";
 import "./styles.css";
 import BrokenModal from "./BrokenModal";
@@ -8,24 +8,23 @@ import BrokenModal from "./BrokenModal";
 export default function App() {
     return (
         <>
-            <BrokenModal />
             <burst />
-            <div className="SplashPage">FirstName LastName</div>
+            <div className="SplashPage">Hunter Habersaat</div>
             <footer>
-                <p>Connect with me:</p>
-                <Button
+                <p className="ConnectText">Connect with me:</p>
+                <BottomButton
                     onClick={() =>
                         (window.location.href =
-                            "https://www.linkedin.com/in/Username/")
+                            "https://www.linkedin.com/in/habersaat/")
                     }>
                     Linkedin
-                </Button>
-                <Button
+                </BottomButton>
+                <BottomButton
                     onClick={() =>
-                        (window.location.href = "https://github.com/Username")
+                        (window.location.href = "https://github.com/habersaat")
                     }>
                     Github
-                </Button>
+                </BottomButton>
             </footer>
         </>
     );
