@@ -6,7 +6,8 @@
         "@mojs/core": "^1.2.1",
         "react": "^16.14.0",
         "react-dom": "^16.14.0",
-        "react-scripts": "^4.0.3"
+        "react-scripts": "^4.0.3",
+        "scroll-snap": "^4.0.2"
     },
     "scripts": {
         "dev": "react-scripts start",
