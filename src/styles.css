@@ -347,7 +347,6 @@ html::-webkit-scrollbar {
     left: 50%;
     top: 58%;
     margin-left: -6.875rem;
-    margin-top: -1.40625rem;
 }
 .launch-button:hover {
     cursor: pointer;
