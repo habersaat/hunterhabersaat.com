@@ -10,19 +10,19 @@ export default function App() {
         <>
             <BrokenModal />
             <burst />
-            <div className="SplashPage">Hunter Habersaat</div>
+            <div className="SplashPage">FirstName LastName</div>
             <footer>
                 <p>Connect with me:</p>
                 <Button
                     onClick={() =>
                         (window.location.href =
-                            "https://www.linkedin.com/in/habersaat/")
+                            "https://www.linkedin.com/in/Username/")
                     }>
                     Linkedin
                 </Button>
                 <Button
                     onClick={() =>
-                        (window.location.href = "https://github.com/habersaat")
+                        (window.location.href = "https://github.com/Username")
                     }>
                     Github
                 </Button>

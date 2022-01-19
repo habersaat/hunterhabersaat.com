@@ -6,13 +6,6 @@ export default function BrokenModal() {
     return (
         <>
             <div>
-                <meta charSet="UTF-8" />
-                <link rel="stylesheet" type="text/css" href="./styles.css" />
-                <link
-                    href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
-                    rel="stylesheet"
-                    type="text/css"
-                />
                 <svg
                     id="svg-source"
                     height={0}
@@ -337,7 +330,6 @@ export default function BrokenModal() {
                     </div>
                 </div>
             </div>
-            <Script1 />
         </>
     );
 }
