@@ -1,32 +1,31 @@
 import "./App.css";
-
 import React, { useState } from "react";
-import MojsExample from "./MojsExample";
-import Button from "./Button";
+import BottomButton from "./BottomButton";
 import Burst from "./Burst";
 import "./styles.css";
+import BrokenModal from "./BrokenModal";
 
 export default function App() {
     const [slowMo, setSlowMo] = useState(false);
     return (
         <>
-            <burst></burst>
+            <burst />
             <div className="SplashPage">Hunter Habersaat</div>
             <footer>
-                <p>Connect with me:</p>
-                <Button
+                <p className="ConnectText">Connect with me:</p>
+                <BottomButton
                     onClick={() =>
                         (window.location.href =
                             "https://www.linkedin.com/in/habersaat/")
                     }>
                     Linkedin
-                </Button>
-                <Button
+                </BottomButton>
+                <BottomButton
                     onClick={() =>
                         (window.location.href = "https://github.com/habersaat")
                     }>
                     Github
-                </Button>
+                </BottomButton>
             </footer>
         </>
     );

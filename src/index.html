@@ -1,33 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8" />
-        <link rel="shortcut icon" href="%PUBLIC_URL%/100emoji.ico" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <link rel="stylesheet" type="text/css" href="../src/styles.css" />
-        <meta name="theme-color" content="#000000" />
-        <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-        <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-        <title>Hunter Habersaat</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
     </head>
     <body>
-        <noscript> You need to enable JavaScript to run this app. </noscript>
-        <div id="root"></div>
         <svg
             id="svg-source"
             height="0"
@@ -45,9 +22,9 @@
                 />
             </g>
         </svg>
-        <div class="look"></div>
+        <div class="look">Look Ma! I broke that HTML!</div>
         <div id="js-show-modal" class="launch-button">
-            show warning
+            show modal
             <div class="launch-button__glare"></div>
         </div>
         <div id="js-modal-overlay" class="modal-overlay"></div>
@@ -234,7 +211,7 @@
                         </svg>
                     </div>
                 </div>
-                <div class="modal__header">Under Construction &#128034;</div>
+                <div class="modal__header">Log In</div>
                 <div class="modal__description">
                     this is dumb modal window, click × to close it
                 </div>
@@ -344,7 +321,7 @@
         <div class="Scripts">
             <script src="./js/jquery-2.1.3.min.js"></script>
             <script src="./js/howl.js"></script>
-            <script src=".//js/tween.js"></script>
+            <script src="./js/tween.js"></script>
             <script src="./js/html2canvas.js"></script>
             <script src="./dist/main.js"></script>
         </div>

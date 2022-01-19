@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import mojs from "@mojs/core"; // Currently there is a bug importing from npm, using external cdn version instead for now
+import mojs from "@mojs/core";
 
 const COLORS = {
     RED: "#FD5061",

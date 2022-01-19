@@ -50,11 +50,11 @@ const buttonBurstsPool = [
 
 let burstIndex = 0;
 
-const Button = ({ onClick, ...props }) => {
+const BottomButton = ({ onClick, ...props }) => {
     return (
-        <button
+        <bottombutton
             {...props}
-            className="button"
+            className="bottombutton"
             onClick={(e) => {
                 buttonBurstsPool[burstIndex]
                     .tune({ x: e.pageX, y: e.pageY })
@@ -70,4 +70,4 @@ const Button = ({ onClick, ...props }) => {
     );
 };
 
-export default Button;
+export default BottomButton;
