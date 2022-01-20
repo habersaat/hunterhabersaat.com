@@ -1,22 +1,30 @@
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, Component } from "react";
 import BottomButton from "./BottomButton";
 import "./styles.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+
+import Articles from "./pages/Articles";
+import Portfolio from "./pages/Portfolio";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import BrokenModal from "./BrokenModal";
 
 export default function App() {
-    const [slowMo, setSlowMo] = useState(false);
     return (
         <>
             <div className="SplashPage">
-            <div class="highlightTextOut">
-                <a alt="HOME">HOME</a>
-                <a alt="ARTICLES">ARTICLES</a>
-                <a alt="PORTFOLIO">PORTFOLIO</a>
-                <a alt="ABOUT">ABOUT</a>
-                <a alt="CONTACT">CONTACT</a>
+                <Navbar />
+                <Routes>
+                    <Route exact path="/" component={<App />} />
+                    <Route exact path="/articles" component={<Articles />} />
+                    <Route exact path="/portfolio" component={<Portfolio />} />
+                    <Route exact path="/about" component={<About />} />
+                    <Route exact path="/contact" component={<Contact />} />
+                </Routes>
+                <div className="BigName">Hunter Habersaat</div>
             </div>
-                Hunter Habersaat
-                </div>
             <div className="whoami">This is some filler text for now.</div>
             <footer>
                 <p className="ConnectText">Connect with me:</p>
