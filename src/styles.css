@@ -595,22 +595,21 @@ button--grey,
 }
 
 /* Highlight text out  */
+div.highlightTextOut {
+    margin-right: 0;
+    margin-left: auto;
+}
+
 div.highlightTextOut a {
     color: rgba(255, 255, 255, 0.3);
     font: 20px Raleway;
-    padding: 0em 3em;
-    position: relative;
-    left: 74em;
-    right: 2em;
-    transform: translate(-50%, -50%);
+    padding: 3em 3em;
     text-decoration: none;
 }
 
-div.highlightTextOut a:before,
-div.highlightTextIn a:before {
+div.highlightTextOut a:before {
     position: absolute;
     color: #fff;
-    top: 0px;
     overflow: hidden;
     content: attr(alt);
     transition: all 0.3s;
@@ -619,8 +618,7 @@ div.highlightTextIn a:before {
     cursor: pointer;
 }
 
-div.highlightTextOut a:hover:before,
-div.highlightTextIn a:hover:before {
+div.highlightTextOut a:hover:before {
     transform: scale(1);
     opacity: 1;
 }
