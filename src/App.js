@@ -9,6 +9,7 @@ import Articles from "./pages/Articles";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import NHSSecret from "./pages/NHSSecret";
 import BrokenModal from "./BrokenModal";
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
                     <Route exact path="/portfolio" component={<Portfolio />} />
                     <Route exact path="/about" component={<About />} />
                     <Route exact path="/contact" component={<Contact />} />
+                    <Route exact path="/nhs-secret" component={<NHSSecret />} />
                 </Routes>
                 <div className="BigName">Hunter Habersaat</div>
             </div>

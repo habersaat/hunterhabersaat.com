@@ -8,6 +8,7 @@ import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import BrokenModal from "./BrokenModal";
+import NHSSecret from "./pages/NHSSecret";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -15,6 +16,7 @@ ReactDOM.render(
         <BrowserRouter>
             <Routes>
                 <Route exact path="/" element={<App />} />
+                <Route exact path="/nhs-secret" element={<NHSSecret />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
