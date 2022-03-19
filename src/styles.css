@@ -672,3 +672,8 @@ div.highlightTextOut a:hover:before {
 .snakeembed {
     overflow: hidden;
 }
+
+.secrettext {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}

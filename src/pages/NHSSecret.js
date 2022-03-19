@@ -10,18 +10,23 @@ export default function NHSSecret() {
     return (
         <>
             <div className="nhssnakegame">
-                <Typewriter
-                    onInit={(typewriter) => {
-                        typewriter
-                            .typeString("You found the secret...")
-                            .pauseFor(2500)
-                            .deleteAll()
-                            .typeString("Beat the game, win a prize.")
-                            .pauseFor(2500)
-                            .deleteAll()
-                            .start();
-                    }}
-                />
+                <div className="secrettext">
+                    <Typewriter
+                        onInit={(typewriter) => {
+                            typewriter
+                                .typeString("You found the secret...")
+                                .pauseFor(2500)
+                                .deleteChars(23)
+                                .typeString("Beat the game, win a prize.")
+                                .pauseFor(2500)
+                                .deleteChars(27)
+                                .typeString(
+                                    "<span>Obtain a score of at least 100.</span>"
+                                )
+                                .start();
+                        }}
+                    />
+                </div>
                 <div className="snakegame">
                     <iframe
                         src="https://www.googlesnake.com/snakedesktop.php"
