@@ -677,3 +677,7 @@ div.highlightTextOut a:hover:before {
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
+
+.staticsecrettext {
+    margin-left: -0.8vw;
+}
