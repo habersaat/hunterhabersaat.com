@@ -650,3 +650,25 @@ div.highlightTextOut a:hover:before {
 .PortfolioPage {
     background: #e74c3c;
 }
+
+.nhssnakegame {
+    background-color: white;
+    font-size: 4rem;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    min-height: 100vh;
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    margin-left: -0.15em; /* Page is offset slightly for some reason */
+    margin-top: -0.15em;
+}
+
+.snakegame {
+    vertical-align: middle;
+}
+
+.snakeembed {
+    overflow: hidden;
+}
