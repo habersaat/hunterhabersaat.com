@@ -8,7 +8,8 @@
         "react-dom": "^16.14.0",
         "react-router-dom": "^6.2.1",
         "react-scripts": "^4.0.3",
-        "scroll-snap": "^4.0.2"
+        "scroll-snap": "^4.0.2",
+        "typewriter-effect": "^2.18.2"
     },
     "scripts": {
         "dev": "react-scripts start",

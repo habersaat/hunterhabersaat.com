@@ -656,7 +656,7 @@ div.highlightTextOut a:hover:before {
     font-size: 4rem;
     color: black;
     font-family: "Ubuntu", sans-serif;
-    min-height: 100vh;
+    min-height: 102vh;
     display: inline-block;
     vertical-align: middle;
     align-items: center;
