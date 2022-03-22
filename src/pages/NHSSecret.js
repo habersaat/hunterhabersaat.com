@@ -57,7 +57,9 @@ export default function NHSSecret() {
                         title="Google Snake"></iframe>
                 </div>
             </div>
-            Brought to you by bored 2021-2022 officers.
+            <div className="secretfooter">
+                Brought to you by bored 2021-2022 officers.
+            </div>
         </>
     );
 }
