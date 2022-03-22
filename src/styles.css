@@ -661,8 +661,8 @@ div.highlightTextOut a:hover:before {
     vertical-align: middle;
     align-items: center;
     justify-content: center;
-    margin-left: -0.15em; /* Page is offset slightly for some reason */
-    margin-top: -0.15em;
+    margin-left: -0.3em; /* Page is offset slightly for some reason */
+    margin-top: -0.3em;
 }
 
 .snakegame {
