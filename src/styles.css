@@ -653,7 +653,7 @@ div.highlightTextOut a:hover:before {
 
 .nhssnakegame {
     background-color: white;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: black;
     font-family: "Ubuntu", sans-serif;
     min-height: 102vh;
@@ -675,7 +675,7 @@ div.highlightTextOut a:hover:before {
 
 .secrettext {
     margin-top: 0vh;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 }
 
 .staticsecrettext {
