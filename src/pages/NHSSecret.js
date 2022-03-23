@@ -58,7 +58,7 @@ export default function NHSSecret() {
                 </div>
             </div>
             <div className="secretfooter">
-                Brought to you by bored 2021-2022 officers.
+                Brought to you by bored 2021-2022 officers
             </div>
         </>
     );
