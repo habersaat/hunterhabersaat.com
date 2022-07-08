@@ -4,6 +4,7 @@ import BottomButton from "./BottomButton";
 import "./styles.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import Fader from "./Components/Fader";
 
 const createWave = (coords) => {
     const circle = {
@@ -56,7 +57,9 @@ export default function App() {
 
     return (
         <>
-            <div className="SplashPage"></div>
+            <div className="SplashPage">
+                <Fader text="Hello React" fadeinterval={3000}></Fader>
+            </div>
             <div className="whoami">This is some filler text for now.</div>
             <footer>
                 <p className="ConnectText">Connect with me:</p>
