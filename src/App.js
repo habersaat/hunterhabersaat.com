@@ -1,32 +1,79 @@
 import "./App.css";
-import React, { useState, Component } from "react";
+import React, { useState, useEffect, Component } from "react";
 import BottomButton from "./BottomButton";
 import "./styles.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 
-import Articles from "./pages/Articles";
-import Portfolio from "./pages/Portfolio";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import NHSSecret from "./pages/NHSSecret";
-import BrokenModal from "./BrokenModal";
+const createWave = (coords) => {
+    const burst = new mojs.Burst({
+        radius: { 0: 80 },
+        count: 10,
+        left: 0,
+        top: 0,
+        children: {
+            shape: "line",
+            stroke: "#FFFFFF",
+            radius: 5,
+            angle: { 360: 0 },
+            duration: 1000,
+            opacity: { 1: 0 },
+        },
+    });
+
+    const circle = {
+        left: 0,
+        top: 0,
+        radius: { 0: 100 },
+        fill: "none",
+        stroke: "#ffffff",
+        delay: 250,
+        opacity: { 0.6: 0 },
+        duration: 1500,
+    };
+
+    const circleShape1 = new mojs.Shape({
+        ...circle,
+    });
+
+    const circleShape2 = new mojs.Shape({
+        ...circle,
+        raius: { 0: 200 },
+        duration: 800,
+    });
+
+    const circleShape3 = new mojs.Shape({
+        ...circle,
+        raius: { 0: 150 },
+        duration: 1000,
+    });
+
+    const timeline = new mojs.Timeline().add(
+        burst,
+        circleShape1,
+        circleShape2,
+        circleShape3
+    );
+
+    burst.tune(coords);
+    circleShape1.tune(coords);
+    circleShape2.tune(coords);
+    circleShape3.tune(coords);
+
+    timeline.replay();
+};
 
 export default function App() {
+    useEffect(() => {
+        document.addEventListener("click", function (e) {
+            const coords = { x: e.pageX, y: e.pageY };
+            createWave(coords);
+        });
+    });
+
     return (
         <>
-            <div className="SplashPage">
-                <Navbar />
-                <Routes>
-                    <Route exact path="/" component={<App />} />
-                    <Route exact path="/articles" component={<Articles />} />
-                    <Route exact path="/portfolio" component={<Portfolio />} />
-                    <Route exact path="/about" component={<About />} />
-                    <Route exact path="/contact" component={<Contact />} />
-                    <Route exact path="/nhs-secret" component={<NHSSecret />} />
-                </Routes>
-                <div className="BigName">Hunter Habersaat</div>
-            </div>
+            <div className="SplashPage"></div>
             <div className="whoami">This is some filler text for now.</div>
             <footer>
                 <p className="ConnectText">Connect with me:</p>

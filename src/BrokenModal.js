@@ -59,73 +59,73 @@ export default function BrokenModal() {
                                     transform="translate(2.000000, 2.000000)">
                                     <path
                                         d="M119.843557,132.665423 L142.438936,241.234321"
-                                        stroke="#FC46AD"
+                                        stroke="white"
                                         strokeWidth={2}
                                         transform="translate(131.141247, 186.949872) rotate(9.000000) translate(-131.141247, -186.949872) "
                                     />
                                     <path
                                         d="M120.923275,136.327807 L194.055085,223.544529"
-                                        stroke="#D0D202"
+                                        stroke="white"
                                         strokeWidth={2}
                                         transform="translate(157.489180, 179.936168) rotate(9.000000) translate(-157.489180, -179.936168) "
                                     />
                                     <path
                                         d="M110.892215,7.63766131 L143.724586,126.274355"
-                                        stroke="#FFE217"
+                                        stroke="white"
                                         strokeWidth={2}
                                         transform="translate(127.308401, 66.956008) rotate(-165.000000) translate(-127.308401, -66.956008) "
                                     />
                                     <path
                                         d="M198.35904,105.458064 L161.773069,223.598866"
-                                        stroke="#B8E986"
+                                        stroke="white"
                                         strokeWidth={3}
                                         transform="translate(180.066054, 164.528465) rotate(-74.000000) translate(-180.066054, -164.528465) "
                                     />
                                     <path
                                         d="M146.454121,53.5458334 L227.175148,153.69563"
-                                        stroke="#D0D202"
+                                        stroke="white"
                                         strokeWidth={2}
                                         transform="translate(186.814634, 103.620732) rotate(-74.000000) translate(-186.814634, -103.620732) "
                                     />
                                     <path
                                         d="M94.4127006,27.0036828 L46.0682754,156.269505"
-                                        stroke="#51CAD7"
+                                        stroke="white"
                                         strokeWidth={3}
                                         transform="translate(70.240488, 91.636594) rotate(-257.000000) translate(-70.240488, -91.636594) "
                                     />
                                     <path
                                         d="M29.3969741,113.63349 L113.205038,207.338224"
-                                        stroke="#FC3F6B"
+                                        stroke="white"
                                         strokeWidth={2}
                                         transform="translate(71.301006, 160.485857) rotate(-257.000000) translate(-71.301006, -160.485857) "
                                     />
                                     <path
                                         d="M125.792,38.3112087 L198.92381,125.527931"
-                                        stroke="#D0D202"
+                                        stroke="white"
                                         strokeWidth={2}
                                         transform="translate(162.357905, 81.919570) rotate(-104.000000) translate(-162.357905, -81.919570) "
                                     />
                                     <path
                                         d="M43.4006609,130.173225 L130.540432,224.973356"
-                                        stroke="#FC46AD"
+                                        stroke="white"
                                         strokeWidth={2}
                                         transform="translate(86.970546, 177.573291) rotate(-278.000000) translate(-86.970546, -177.573291) "
                                     />
                                     <path
                                         d="M157.646537,8.08731537 L121.060566,126.228117"
-                                        stroke="#B8E986"
+                                        stroke="white"
                                         strokeWidth={3}
                                         transform="translate(139.353552, 67.157716) rotate(-187.000000) translate(-139.353552, -67.157716) "
                                     />
                                     <path
                                         d="M139.340711,132.100895 L90.9962855,261.366717"
-                                        stroke="#51CAD7"
+                                        stroke="white"
                                         strokeWidth={3}
                                         transform="translate(115.168498, 196.733806) rotate(-10.000000) translate(-115.168498, -196.733806) "
                                     />
                                     <path
                                         d="M136.22617,122.003677 L220.034234,215.708411"
-                                        stroke="#FC3F6B"
+                                        stroke="white"
                                         strokeWidth={2}
                                         transform="translate(178.130202, 168.856044) rotate(-10.000000) translate(-178.130202, -168.856044) "
                                     />
@@ -151,7 +151,7 @@ export default function BrokenModal() {
                                             x2={2}
                                             y1={0}
                                             y2={900}
-                                            stroke="red"
+                                            stroke="white"
                                             strokeDasharray="900 1800"
                                             strokeDashoffset={900}
                                         />
@@ -160,7 +160,7 @@ export default function BrokenModal() {
                                             x2={2}
                                             y1={0}
                                             y2={900}
-                                            stroke="red"
+                                            stroke="white"
                                             strokeDasharray="900 1800"
                                             strokeDashoffset={900}
                                         />
@@ -169,7 +169,7 @@ export default function BrokenModal() {
                                             x2={2}
                                             y1={0}
                                             y2={900}
-                                            stroke="red"
+                                            stroke="white"
                                             strokeDasharray="900 1800"
                                             strokeDashoffset={900}
                                         />

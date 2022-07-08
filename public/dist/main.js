@@ -268,7 +268,7 @@
                             path.setAttribute("stroke-linecap", "round");
                         }
                         len = 900;
-                        colors = ["hotpink", "yellow", "cyan"];
+                        colors = ["#a6a6a6", "#a6a6a6", "#a6a6a6"];
                         this.linesT = new TWEEN.Tween({
                             p: 0,
                         })

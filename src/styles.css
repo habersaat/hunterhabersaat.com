@@ -8,7 +8,7 @@ svg {
 
 .SplashPage {
     position: relative;
-    background: #ea485c;
+    background: #242424;
     overflow: hidden;
     min-height: 100vh;
     display: flex;
@@ -310,7 +310,7 @@ html::-webkit-scrollbar {
 .look {
     position: absolute;
     z-index: 1;
-    color: #fe3a64;
+    color: #191919;
     top: 50%;
     left: 50%;
     margin-left: -6.5625rem;
@@ -323,7 +323,7 @@ html::-webkit-scrollbar {
 .launch-button {
     font-size: 16px;
     color: #fff;
-    background-color: #4acad9;
+    background-color: #131313;
     border-radius: 0.375rem;
     text-align: center;
     width: 13.75rem;
