@@ -49,7 +49,6 @@ const createWave = (coords) => {
     });
 
     const timeline = new mojs.Timeline().add(
-        burst,
         circleShape1,
         circleShape2,
         circleShape3
