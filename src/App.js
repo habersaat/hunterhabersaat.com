@@ -6,28 +6,13 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 
 const createWave = (coords) => {
-    const burst = new mojs.Burst({
-        radius: { 0: 80 },
-        count: 10,
-        left: 0,
-        top: 0,
-        children: {
-            shape: "line",
-            stroke: "#FFFFFF",
-            radius: 5,
-            angle: { 360: 0 },
-            duration: 1000,
-            opacity: { 1: 0 },
-        },
-    });
-
     const circle = {
         left: 0,
         top: 0,
         radius: { 0: 100 },
         fill: "none",
         stroke: "#ffffff",
-        delay: 250,
+        delay: 50,
         opacity: { 0.6: 0 },
         duration: 1500,
     };
@@ -54,7 +39,6 @@ const createWave = (coords) => {
         circleShape3
     );
 
-    burst.tune(coords);
     circleShape1.tune(coords);
     circleShape2.tune(coords);
     circleShape3.tune(coords);
