@@ -106,7 +106,74 @@ export default function App() {
     const scrollref = useRef(null);
 
     const handleScroll = () => {
-        scrollref.current?.scrollIntoView({ behavior: "smooth" });
+        //scrollref.current?.scrollIntoView({ behavior: "smooth" });
+        const coords = { x: boxX + 165, y: 2000 };
+
+        const MAIN_OPTS = {
+            count: 3,
+            radius: 0,
+            degree: 0,
+        };
+
+        const CHILD_OPTS = {
+            stroke: ["#FC2D79", "#11CDC5", "white"],
+            fill: "none",
+            duration: 400,
+            scale: 1,
+            radius: 35,
+            radiusY: { 0: 35 },
+            strokeWidth: 3,
+            duration: 800,
+            delay: "stagger(125)",
+        };
+
+        const vertLine = new mojs.Burst({
+            ...MAIN_OPTS,
+            x: -1,
+
+            children: {
+                ...CHILD_OPTS,
+                shape: "line",
+                radius: 35,
+                scaleX: { 0: 1 },
+                left: -35,
+                top: 35,
+                origin: "100% 50%",
+            },
+        });
+
+        const horLine = new mojs.Burst({
+            ...MAIN_OPTS,
+            angle: 90,
+            y: -50,
+
+            children: {
+                ...CHILD_OPTS,
+                shape: "line",
+                radius: 20,
+                radiusX: { 0: 20 },
+                delay: "stagger(800, 125)",
+            },
+        });
+
+        const o = new mojs.Burst({
+            ...MAIN_OPTS,
+            width: 10,
+            height: 10,
+
+            children: {
+                ...CHILD_OPTS,
+                delay: "stagger(650, 125)",
+            },
+        });
+
+        const timeline = new mojs.Timeline().add(o, vertLine, horLine);
+
+        //o.tune(coords);
+        //vertLine.tune(coords);
+        //horLine.tune(coords);
+
+        timeline.replay();
     };
 
     return (
