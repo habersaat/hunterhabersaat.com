@@ -12,6 +12,7 @@ svg {
     background: #0c0c0c;
     overflow: hidden;
     min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     flex: 1;
     font-size: 6rem;
