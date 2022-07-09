@@ -48,6 +48,19 @@ const createWave = (coords) => {
 };
 
 export default function App() {
+    const [splashText, setSplashText] = useState("");
+
+    useEffect(() => {
+        let r_text = new Array();
+        r_text[0] = "What is this place?";
+        r_text[1] = "[Don't] click the button";
+        r_text[2] = "An Empty Page?";
+        r_text[3] = "Try clicking the button";
+
+        var i = Math.floor(r_text.length * Math.random());
+        setSplashText(r_text[i]);
+    }, []);
+
     useEffect(() => {
         document.addEventListener("click", function (e) {
             const coords = { x: e.pageX, y: e.pageY };
@@ -58,7 +71,7 @@ export default function App() {
     return (
         <>
             <div className="SplashPage">
-                <Fader text="Hello React" fadeinterval={3000}></Fader>
+                <Fader text={splashText} fadeinterval={3000}></Fader>
             </div>
             <div className="whoami">This is some filler text for now.</div>
             <footer>
