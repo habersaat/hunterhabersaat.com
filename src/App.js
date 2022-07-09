@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useEffect, Component } from "react";
+import React, { useRef, useState, useEffect, Component } from "react";
 import BottomButton from "./BottomButton";
 import "./styles.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -50,6 +50,33 @@ const createWave = (coords) => {
 export default function App() {
     const [splashText, setSplashText] = useState("");
 
+    const boxRef = useRef();
+
+    // X
+    const [boxX, setboxX] = useState();
+
+    // Y
+    const [boxY, setboxY] = useState();
+
+    // This function calculate X and Y
+    const getPosition = () => {
+        const boxX = boxRef.current.offsetLeft;
+        setboxX(boxX);
+
+        const boxY = boxRef.current.offsetTop;
+        setboxY(boxY);
+    };
+
+    // Get the position of the red box in the beginning
+    useEffect(() => {
+        getPosition();
+    }, []);
+
+    // Re-calculate X and Y of the red box when the window is resized by the user
+    useEffect(() => {
+        window.addEventListener("resize", getPosition);
+    }, []);
+
     useEffect(() => {
         let r_text = new Array();
         r_text[0] = "What is this place?";
@@ -62,18 +89,43 @@ export default function App() {
     }, []);
 
     useEffect(() => {
-        document.addEventListener("click", function (e) {
+        window.addEventListener("click", function (e) {
+            getPosition();
             const coords = { x: e.pageX, y: e.pageY };
-            createWave(coords);
+            if (
+                e.pageX < boxX - 100 ||
+                e.pageX > boxX + 330 + 100 ||
+                e.pageY < boxY - 100 ||
+                e.pageY > boxY + 130 + 100
+            ) {
+                createWave(coords);
+            }
         });
     });
+
+    const scrollref = useRef(null);
+
+    const handleScroll = () => {
+        scrollref.current?.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <>
             <div className="SplashPage">
-                <Fader text={splashText} fadeinterval={3000}></Fader>
+                <Fader text={splashText} fadeinterval={2000}></Fader>
+                <div
+                    id="js-show-modal"
+                    class="launch-button"
+                    ref={boxRef}
+                    onClick={handleScroll}>
+                    launch
+                    <div class="launch-button__glare"></div>
+                </div>
             </div>
-            <div className="whoami">This is some filler text for now.</div>
+            <div className="whoami">
+                <h2 ref={scrollref}>X: {boxX ?? "No Result"}</h2>
+                <h2>Y: {boxY ?? "No Result"}</h2>
+            </div>
             <footer>
                 <p className="ConnectText">Connect with me:</p>
                 <BottomButton
